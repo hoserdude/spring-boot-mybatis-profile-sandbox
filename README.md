@@ -7,4 +7,4 @@ This is built on the Spring Boot Profile sample (https://github.com/spring-proje
 
 The goal is to get Spring's Config capabilities to work with MyBatis MapperScanner using Java config + Annotations.
 
-Challenge: MyBatis MapperScanner creates Beans that depend on SqlSessionFactory which depends on DataSource which depends on Properties which are not built until AFTER MyBatis does it's thing.  Essentially everything is backwards.
+** This now works, hooray! **

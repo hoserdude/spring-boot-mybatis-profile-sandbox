@@ -10,5 +10,5 @@ public interface UserMapper {
 	public User getUser(long userId);
 
     @Insert("insert into user (id, email, userName) values(#{id}, #{email}, #{userName})")
-    public void addUser(User user);
+    public int addUser(User user);
 }
