@@ -9,6 +9,6 @@ public interface UserMapper {
 	@Select("SELECT * FROM user WHERE id = #{userId}")
 	public User getUser(long userId);
 
-    @Insert("insert into user (id, email, userName) values(#{id}, #{email}, #{userName})")
+    @Insert("insert into user (email, userName) values(#{email}, #{userName})")
     public int addUser(User user);
 }

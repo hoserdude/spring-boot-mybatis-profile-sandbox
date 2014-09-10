@@ -45,7 +45,7 @@ public class SampleProfileApplication implements CommandLineRunner {
 	public void run(String... args) {
 		System.out.println(this.helloWorldService.getMessage());
         System.out.println("Adding User");
-        int userId = userMapper.addUser(new User(1, "dude@dude.com", "thedude"));
+        int userId = userMapper.addUser(new User("dude@dude.com", "thedude"));
         System.out.println("Getting User");
         User user = userMapper.getUser(userId);
         System.out.println("Got User: " + user.getUserName());
