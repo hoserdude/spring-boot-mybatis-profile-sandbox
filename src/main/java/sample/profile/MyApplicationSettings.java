@@ -1,8 +1,10 @@
 package sample.profile;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
-@ConfigurationProperties(name="myapp")
+@ConfigurationProperties("myapp")
+@EnableConfigurationProperties
 public class MyApplicationSettings {
 	
 	private String hello;

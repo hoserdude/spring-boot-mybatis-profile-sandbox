@@ -20,6 +20,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import sample.profile.domain.User;
+import sample.profile.persistence.UserMapper;
 import sample.profile.service.MessageService;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -35,16 +37,18 @@ public class SampleProfileApplication implements CommandLineRunner {
 
 	@Autowired
 	private MessageService helloWorldService;
-	
-	@Autowired
-	private ConnectionSettings connectionSettings;
-	
+
+    @Autowired
+    private UserMapper userMapper;
+
 	@Override
 	public void run(String... args) {
 		System.out.println(this.helloWorldService.getMessage());
-		System.out.println("Connection Settings:");
-		System.out.println("Driver: " + this.connectionSettings.getDriver());
-		System.out.println("Url: " + this.connectionSettings.getUrl());
+        System.out.println("Adding User");
+        userMapper.addUser(new User(1, "dude@dude.com", "thedude"));
+        System.out.println("Getting User");
+        User user = userMapper.getUser(1l);
+        System.out.println("Got User: " + user.getUserName());
 	}
 
 	public static void main(String[] args) throws Exception {

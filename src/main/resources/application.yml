@@ -1,11 +1,6 @@
 myapp:
   hello: Hello
   name: Phil
-jdbc:
-  driver: com.mysql.jdbc.Driver
-  url: jdbc:mysql://localhost:3306/test
-  username: foo
-  password: bar
 ---
 
 spring:

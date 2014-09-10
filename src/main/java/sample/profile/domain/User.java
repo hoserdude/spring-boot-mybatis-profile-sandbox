@@ -2,17 +2,23 @@ package sample.profile.domain;
 
 public class User {
 
-	private Long id;
+	private int id;
 	private String email;
 	private String userName;
 	
 	public User() {}
 
-	public Long getId() {
+    public User(int id, String email, String userName) {
+        this.id = id;
+        this.email = email;
+        this.userName = userName;
+    }
+
+    public int getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 

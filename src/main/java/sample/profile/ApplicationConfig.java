@@ -4,7 +4,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@EnableConfigurationProperties({MyApplicationSettings.class, ConnectionSettings.class})
+@EnableConfigurationProperties({MyApplicationSettings.class})
 public class ApplicationConfig {
 
 
