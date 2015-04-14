@@ -5,18 +5,11 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.2.0.RELEASE</version>
+        <version>1.2.3.RELEASE</version>
     </parent>
-	<artifactId>spring-boot-mybatis-profile-sandbox</artifactId>
+	<artifactId>spring-boot-mybatis-sandbox</artifactId>
 	<packaging>jar</packaging>
-	<properties>
-		<main.basedir>${basedir}/../..</main.basedir>
-	</properties>
 	<dependencies>
-		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>spring-boot-starter-jdbc</artifactId>
@@ -31,10 +24,10 @@
 			<artifactId>mybatis-spring</artifactId>
 			<version>1.2.2</version>
 		</dependency>
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-        </dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+		</dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>spring-boot-starter-test</artifactId>

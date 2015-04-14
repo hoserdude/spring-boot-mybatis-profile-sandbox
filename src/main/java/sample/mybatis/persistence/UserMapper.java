@@ -1,9 +1,9 @@
-package sample.profile.persistence;
+package sample.mybatis.persistence;
 
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 
-import sample.profile.domain.User;
+import sample.mybatis.domain.User;
 
 public interface UserMapper {
 	@Select("SELECT * FROM user WHERE id = #{userId}")

@@ -1,4 +1,4 @@
-package sample.profile;
+package sample.mybatis;
 
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
@@ -12,7 +12,7 @@ import javax.sql.DataSource;
 import static org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType.H2;
 
 @Configuration
-@MapperScan(basePackages="sample.profile.persistence"/*, sqlSessionFactoryRef="mySessionFactory"*/)
+@MapperScan(basePackages="sample.mybatis.persistence")
 public class DatabaseConfig {
 
     @Bean

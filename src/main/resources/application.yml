@@ -1,9 +1,0 @@
-myapp:
-  hello: Hello
-  name: Phil
----
-
-spring:
-  profiles: goodbye,dev
-myapp:
-  name: Everyone

@@ -1,4 +1,4 @@
-package sample.profile.domain;
+package sample.mybatis.domain;
 
 public class User {
 
